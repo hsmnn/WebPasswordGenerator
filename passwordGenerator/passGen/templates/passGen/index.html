@@ -15,6 +15,7 @@
             {% else %}
                 <p>Not generated name yet.</p>
             {% endif %}
+            <input type="number" name="length" max="94" min="10" required="required" value="10">
             <form action="{% url 'passGen:generate' %}" method="POST">
                 {% csrf_token %}
                 <button type="submit">Generate password</button>

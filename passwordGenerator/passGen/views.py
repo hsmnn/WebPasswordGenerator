@@ -10,7 +10,8 @@ class IndexView(View):
         return render(request, 'passGen/index.html', {'password': latestPswd})
 
     def generate(request):
-        pswd = PasswordGen(10)
+        print(request.POST.get('length'))
+        pswd = PasswordGen(0)
         db = Password()
         db.password = pswd.generate()
         db.save()
