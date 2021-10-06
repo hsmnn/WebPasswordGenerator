@@ -6,12 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% load static %}
         <link rel="stylesheet" type="text/css" href="{% static 'passGen/main.css' %}">
+        <script type="text/javascript" src="{% static 'passGen/app.js' %}"></script>
         <title>Password Generator</title>
     </head>
     <body>
         <div class="password__box">
             {% if password %}
-                <p>{{ password }}</p>
+                <p id="password">{{ password }}</p>
             {% else %}
                 <p>Not generated name yet.</p>
             {% endif %}
@@ -20,6 +21,7 @@
                 {{ form }}
                 <button type="submit">Generate password</button>
             </form>
+            <button onclick="copyToClipboard()">Copy password</button>
         </div>
     </body>
 </html>
