@@ -1,3 +1,60 @@
-p {
-    color: red;
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
 }
+
+.password__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.password__box p {
+  border: 1px black solid;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form input {
+  width: 3em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: medium;
+}
+
+form .form__button button {
+  width: 10em;
+  height: 2em;
+  background-color: lightblue;
+  border: 1px lightblue solid;
+  font-size: medium;
+  -webkit-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+
+form .form__button button:hover {
+  background-color: lightskyblue;
+  border: 1px lightskyblue solid;
+}
+/*# sourceMappingURL=main.css.map */

@@ -19,9 +19,11 @@
             <form action="{% url 'passGen:generate' %}" method="POST">
                 {% csrf_token %}
                 {{ form }}
-                <button type="submit">Generate password</button>
+                <div class="form__button">
+                    <button type="submit">Generate password</button>
+                    <button onclick="copyToClipboard()">Copy password</button>
+                </div>
             </form>
-            <button onclick="copyToClipboard()">Copy password</button>
         </div>
     </body>
 </html>

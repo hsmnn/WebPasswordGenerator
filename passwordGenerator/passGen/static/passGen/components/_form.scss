@@ -1,0 +1,23 @@
+form {
+    input {
+        width: 3em;
+        margin-bottom: 0.5em;
+        margin-left: 0.5em;
+        justify-content: center;
+        font-size: medium;
+    }
+    .form__button {
+        button {
+            width: 10em;
+            height: 2em;
+            background-color: lightblue;
+            border: 1px lightblue solid;
+            font-size: medium;
+            transition: all ease-out 0.2s;
+            &:hover {
+                background-color: lightskyblue;
+                border: 1px lightskyblue solid;
+            }
+        }
+    }
+}
