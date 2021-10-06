@@ -3,7 +3,7 @@ import string
 
 class PasswordGen:
     def __init__(self, length):
-        if length > 94 or length < 4:
+        if length > 94 or length < 8:
             self.length = 10
         else:
             self.length = length
