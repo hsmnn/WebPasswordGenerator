@@ -54,7 +54,7 @@ SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
 
 SESSION_COOKIE_HTTPONLY = True
 
-SESSION_COOKIE_AGE = 600
+SESSION_COOKIE_AGE = 60
 
 ROOT_URLCONF = 'passwordGenerator.urls'
 
