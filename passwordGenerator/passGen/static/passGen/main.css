@@ -56,5 +56,6 @@ form .form__button button {
 form .form__button button:hover {
   background-color: lightskyblue;
   border: 1px lightskyblue solid;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
